@@ -1,4 +1,5 @@
 import { ModeToggle } from "@/components/theme/ModeToggle";
+import UserNav from "@/components/layouts/UserNav";
 
 interface NavbarProps {
   title: string;
@@ -13,6 +14,7 @@ const Navbar = ({ title }: NavbarProps) => {
         </div>
         <div className="flex flex-1 items-center space-x-2 justify-end">
           <ModeToggle />
+          <UserNav />
         </div>
       </div>
     </header>
