@@ -12,6 +12,7 @@ import {
   TooltipContent,
   TooltipProvider,
 } from "@/components/ui/tooltip";
+import CollapseMenu from "@/components/layouts/CollapsedMenu";
 import { cn } from "@/lib/utils";
 import { getMenuList } from "@/lib/menuList";
 
@@ -89,7 +90,16 @@ const Menu = ({ isOpen }: MenuProps) => {
                       </TooltipProvider>
                     </div>
                   ) : (
-                    <div className="w-full" key={index}></div>
+                    <div className="w-full" key={index}>
+                      {" "}
+                      <CollapseMenu
+                        icon={Icon}
+                        label={label}
+                        active={active}
+                        submenus={submenus}
+                        isOpen={isOpen}
+                      />
+                    </div>
                   )
               )}
             </li>

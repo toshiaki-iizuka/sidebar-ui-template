@@ -33,9 +33,9 @@ export const getMenuList = (pathname: string): Group[] => {
       groupLabel: "",
       menus: [
         {
-          href: "/dashboard",
-          label: "Dashboard",
-          active: pathname.includes("/dashboard"),
+          href: "/",
+          label: "Home",
+          active: pathname.includes(""),
           icon: LayoutGrid,
           submenus: [],
         },

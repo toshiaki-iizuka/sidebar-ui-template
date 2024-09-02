@@ -6,7 +6,7 @@ import { useSidebarToggle } from "@/hooks/useSidebarToggle";
 import { useStore } from "@/hooks/useStore";
 import { cn } from "@/lib/utils";
 
-import Menu from "@/components/layouts/menu";
+import Menu from "@/components/layouts/Menu";
 import SidebarToggle from "@/components/layouts/SidebarToggle";
 
 const Sidebar = () => {
