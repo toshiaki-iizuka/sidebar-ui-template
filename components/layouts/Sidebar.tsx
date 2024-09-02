@@ -6,6 +6,7 @@ import { useSidebarToggle } from "@/hooks/useSidebarToggle";
 import { useStore } from "@/hooks/useStore";
 import { cn } from "@/lib/utils";
 
+import Menu from "@/components/layouts/menu";
 import SidebarToggle from "@/components/layouts/SidebarToggle";
 
 const Sidebar = () => {
@@ -43,6 +44,7 @@ const Sidebar = () => {
             </h1>
           </Link>
         </Button>
+        <Menu isOpen={sidebar?.isOpen} />
       </div>
     </aside>
   );
