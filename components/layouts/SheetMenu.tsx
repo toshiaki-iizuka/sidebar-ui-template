@@ -28,7 +28,9 @@ const SheetMenu = () => {
           >
             <Link href="/dashboard" className="flex items-center gap-2">
               <PanelsTopLeft className="w-6 h-6 mr-1" />
-              <SheetTitle className="font-bold text-lg">Brand</SheetTitle>
+              <SheetTitle className="font-bold text-lg">
+                Sidebar Template
+              </SheetTitle>
             </Link>
           </Button>
         </SheetHeader>

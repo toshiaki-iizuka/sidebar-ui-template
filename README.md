@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Sidebar Template
 
-## Getting Started
+A functional retractable sidebar for Next.js using shadcn/ui complete with desktop and mobile responsiveness.
 
-First, run the development server:
+#### Light mode
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+![light-mode](https://github.com/user-attachments/assets/ad5fb2d9-6ca1-4a45-b268-941173924908)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Dark mode
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![dark-mode](https://github.com/user-attachments/assets/58ab064c-8568-4538-a314-26166393bd8e)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### Mini sidebar
 
-## Learn More
+![mini-sidebar](https://github.com/user-attachments/assets/8fd2c196-f67f-4876-9030-3797be29cb70)
 
-To learn more about Next.js, take a look at the following resources:
+#### Sheet sidebar
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![sheet-sidebar](https://github.com/user-attachments/assets/017713c2-1075-44a6-b480-75f1dba29546)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## 📋 <a name="table">Table of Contents</a>
 
-## Deploy on Vercel
+1. ⚙️ [Tech Stack](#tech-stack)
+2. 🔋 [Features](#features)
+3. 🤸 [Quick Start](#quick-start)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## <a name="tech-stack">⚙️ Tech Stack</a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Next.js 14
+- Shadcn/ui
+- Tailwind CSS
+- TypeScript
+- Zustand
+
+## <a name="features">🔋 Features</a>
+
+👉 **Retractable mini and wide sidebar**: A sidebar that can be toggled between a compact "mini" version and a wider version, allowing users to switch between a more minimalist view and one that shows more detailed options.
+
+👉 **Scrollable sidebar menu**: A sidebar menu that allows users to scroll through options, making it easier to navigate through a long list of items without taking up too much screen space.
+
+👉 **Sheet menu for mobile**: A menu designed specifically for mobile devices, presented as a sheet that slides up from the bottom of the screen, offering an intuitive and space-efficient way to access options.
+
+👉 **Grouped menu with labels**: A menu where items are organized into groups with labels, helping users quickly find and access related options within the interface.
+
+👉 **Collapsible submenu**: A submenu that can be expanded or collapsed within the main menu, allowing users to manage the visibility of additional options and reduce clutter.
+
+👉 **Extracted menu items list**: A list of menu items that has been separated or extracted from a more complex menu structure, providing a simplified view of key options for easier access.
+
+## <a name="quick-start">🤸 Quick Start</a>
+
+Follow these steps to set up the project locally on your machine.
+
+**Prerequisites**
+
+Make sure you have the following installed on your machine:
+
+- [Git](https://git-scm.com/)
+- [Node.js](https://nodejs.org/en)
+- [npm](https://www.npmjs.com/) (Node Package Manager)
+
+**Installation**
+
+1. Clone the repository
+
+   ```bash
+   git clone https://github.com/toshiaki-iizuka/sidebar-ui-template.git
+   ```
+
+2. Install dependencies
+
+   ```bash
+   cd sidebar-ui-template
+   npm install
+   ```
+
+3. Run the development server
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open your browser and view the project
+
+   [http://localhost:3000](http://localhost:3000)
