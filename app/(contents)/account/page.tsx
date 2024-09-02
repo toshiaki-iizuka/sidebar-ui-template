@@ -1,20 +1,30 @@
+import Link from "next/link";
+
 import {
   Breadcrumb,
   BreadcrumbItem,
+  BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
+  BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
 import Content from "@/components/layouts/Content";
 import SampleContent from "@/components/content/SampleContent";
 
-const Home = () => {
+const AccountPage = () => {
   return (
-    <Content title="Home">
+    <Content title="Account">
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
-            <BreadcrumbPage>Home</BreadcrumbPage>
+            <BreadcrumbLink asChild>
+              <Link href="/">Home</Link>
+            </BreadcrumbLink>
+          </BreadcrumbItem>
+          <BreadcrumbSeparator />
+          <BreadcrumbItem>
+            <BreadcrumbPage>Account</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
       </Breadcrumb>
@@ -24,4 +34,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default AccountPage;
