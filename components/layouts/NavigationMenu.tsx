@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { MenuIcon, PanelsTopLeft } from "lucide-react";
 
@@ -8,10 +10,11 @@ import {
   SheetContent,
   SheetTrigger,
   SheetTitle,
+  SheetDescription,
 } from "@/components/ui/sheet";
-import Menu from "@/components/layouts/Menu";
+import { Menu } from "@/components/layouts/Menu";
 
-const SheetMenu = () => {
+export const NavigationMenu = () => {
   return (
     <Sheet>
       <SheetTrigger className="lg:hidden" asChild>
@@ -22,7 +25,7 @@ const SheetMenu = () => {
       <SheetContent className="sm:w-72 px-3 h-full flex flex-col" side="left">
         <SheetHeader>
           <Button
-            className="flex justify-center items-center pb-2 pt-1"
+            className="flex justify-center items-center pb-2 pt-1 -translate-x-3"
             variant="link"
             asChild
           >
@@ -33,11 +36,12 @@ const SheetMenu = () => {
               </SheetTitle>
             </Link>
           </Button>
+          <SheetDescription className="sr-only">
+            Open navigation menu
+          </SheetDescription>
         </SheetHeader>
         <Menu isOpen />
       </SheetContent>
     </Sheet>
   );
 };
-
-export default SheetMenu;

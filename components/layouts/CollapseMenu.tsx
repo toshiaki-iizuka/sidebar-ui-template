@@ -41,7 +41,7 @@ interface CollapseMenuProps {
   isOpen: boolean | undefined;
 }
 
-const CollapseMenu = ({
+export const CollapseMenu = ({
   icon: Icon,
   label,
   active,
@@ -174,5 +174,3 @@ const CollapseMenu = ({
     </DropdownMenu>
   );
 };
-
-export default CollapseMenu;

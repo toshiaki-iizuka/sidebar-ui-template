@@ -1,9 +1,11 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 
 import { Card, CardContent } from "@/components/ui/card";
 
-const SampleContent = () => {
+export const SampleContent = () => {
   return (
     <Card className="rounded-lg border-none mt-6">
       <CardContent className="p-6">
@@ -32,5 +34,3 @@ const SampleContent = () => {
     </Card>
   );
 };
-
-export default SampleContent;

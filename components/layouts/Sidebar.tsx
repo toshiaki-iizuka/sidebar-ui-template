@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import { PanelsTopLeft } from "lucide-react";
 
@@ -6,10 +8,10 @@ import { useSidebarToggle } from "@/hooks/useSidebarToggle";
 import { useStore } from "@/hooks/useStore";
 import { cn } from "@/lib/utils";
 
-import Menu from "@/components/layouts/Menu";
-import SidebarToggle from "@/components/layouts/SidebarToggle";
+import { Menu } from "@/components/layouts/Menu";
+import { SidebarToggle } from "@/components/layouts/SidebarToggle";
 
-const Sidebar = () => {
+export const Sidebar = () => {
   const sidebar = useStore(useSidebarToggle, state => state);
   if (!sidebar) return null;
 
@@ -25,7 +27,7 @@ const Sidebar = () => {
         <Button
           className={cn(
             "transition-transform ease-in-out duration-300 mb-1",
-            sidebar?.isOpen === false ? "translate-x-1" : "translate-x-0"
+            sidebar?.isOpen === false ? "translate-x-1" : "-translate-x-2"
           )}
           variant="link"
           asChild
@@ -49,5 +51,3 @@ const Sidebar = () => {
     </aside>
   );
 };
-
-export default Sidebar;

@@ -1,7 +1,7 @@
 "use client";
 
-import Footer from "@/components/layouts/Footer";
-import Sidebar from "@/components/layouts/Sidebar";
+import { Footer } from "@/components/layouts/Footer";
+import { Sidebar } from "@/components/layouts/Sidebar";
 import { useSidebarToggle } from "@/hooks/useSidebarToggle";
 import { useStore } from "@/hooks/useStore";
 import { cn } from "@/lib/utils";

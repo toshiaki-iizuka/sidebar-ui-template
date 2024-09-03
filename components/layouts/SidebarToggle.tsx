@@ -1,3 +1,5 @@
+"use client";
+
 import { ChevronLeft } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -8,7 +10,7 @@ interface SidebarToggleProps {
   setIsOpen?: () => void;
 }
 
-const SidebarToggle = ({ isOpen, setIsOpen }: SidebarToggleProps) => {
+export const SidebarToggle = ({ isOpen, setIsOpen }: SidebarToggleProps) => {
   return (
     <div className="invisible lg:visible absolute top-[12px] -right-[16px] z-20">
       <Button
@@ -27,5 +29,3 @@ const SidebarToggle = ({ isOpen, setIsOpen }: SidebarToggleProps) => {
     </div>
   );
 };
-
-export default SidebarToggle;

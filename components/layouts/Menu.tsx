@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Ellipsis, LogOut } from "lucide-react";
 import { usePathname } from "next/navigation";
 
+import { CollapseMenu } from "@/components/layouts/CollapseMenu";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import {
@@ -12,7 +13,6 @@ import {
   TooltipContent,
   TooltipProvider,
 } from "@/components/ui/tooltip";
-import CollapseMenu from "@/components/layouts/CollapsedMenu";
 import { cn } from "@/lib/utils";
 import { getMenuList } from "@/lib/menuList";
 
@@ -20,7 +20,7 @@ interface MenuProps {
   isOpen: boolean | undefined;
 }
 
-const Menu = ({ isOpen }: MenuProps) => {
+export const Menu = ({ isOpen }: MenuProps) => {
   const pathname = usePathname();
   const menuList = getMenuList(pathname);
 
@@ -137,5 +137,3 @@ const Menu = ({ isOpen }: MenuProps) => {
     </ScrollArea>
   );
 };
-
-export default Menu;

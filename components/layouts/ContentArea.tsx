@@ -1,11 +1,13 @@
-import Navbar from "@/components/layouts/Navbar";
+"use client";
+
+import { Navbar } from "@/components/layouts/Navbar";
 
 interface ContentProps {
   title: string;
   children: React.ReactNode;
 }
 
-const Content = ({ title, children }: ContentProps) => {
+export const ContentArea = ({ title, children }: ContentProps) => {
   return (
     <div>
       <Navbar title={title} />
@@ -13,5 +15,3 @@ const Content = ({ title, children }: ContentProps) => {
     </div>
   );
 };
-
-export default Content;

@@ -5,12 +5,12 @@ import {
   BreadcrumbPage,
 } from "@/components/ui/breadcrumb";
 
-import Content from "@/components/layouts/Content";
-import SampleContent from "@/components/content/SampleContent";
+import { ContentArea } from "@/components/layouts/ContentArea";
+import { SampleContent } from "@/components/content/SampleContent";
 
 const Home = () => {
   return (
-    <Content title="Home">
+    <ContentArea title="Home">
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -20,7 +20,7 @@ const Home = () => {
       </Breadcrumb>
 
       <SampleContent />
-    </Content>
+    </ContentArea>
   );
 };
 

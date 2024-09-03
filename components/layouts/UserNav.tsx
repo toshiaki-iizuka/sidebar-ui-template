@@ -21,7 +21,7 @@ import {
   TooltipProvider,
 } from "@/components/ui/tooltip";
 
-const UserNav = () => {
+export const UserNav = () => {
   return (
     <DropdownMenu>
       <TooltipProvider disableHoverableContent>
@@ -76,5 +76,3 @@ const UserNav = () => {
     </DropdownMenu>
   );
 };
-
-export default UserNav;

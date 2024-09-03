@@ -9,12 +9,12 @@ import {
   BreadcrumbSeparator,
 } from "@/components/ui/breadcrumb";
 
-import Content from "@/components/layouts/Content";
-import SampleContent from "@/components/content/SampleContent";
+import { ContentArea } from "@/components/layouts/ContentArea";
+import { SampleContent } from "@/components/content/SampleContent";
 
 const AccountPage = () => {
   return (
-    <Content title="Account">
+    <ContentArea title="Account">
       <Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
@@ -30,7 +30,7 @@ const AccountPage = () => {
       </Breadcrumb>
 
       <SampleContent />
-    </Content>
+    </ContentArea>
   );
 };
 
